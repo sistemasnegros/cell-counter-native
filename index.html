@@ -14,7 +14,7 @@
 					<img style="width: 35px" src="./public/img/neutrofilo.jpg" alt="" />
 					<p style="width: 100px;">Neutro:</p>
 					<input
-						id="input-neutrofilo"
+						id="neutrofilo"
 						readOnly
 					/>
 				</div>
@@ -23,7 +23,7 @@
 					<img style="width: 35px" src="./public/img/linfocito-reactivo.jpg" alt="" />
 					<p style="width: 100px;">Linfo:</p>
 					<input
-						id="input-linfocito"
+						id="linfocito"
 						readOnly
 					/>
 				</div>
@@ -32,7 +32,7 @@
 					<img style="width: 35px" src="./public/img/monocito.jpg" alt="" />
 					<p style="width: 100px;">Monocito:</p>
 					<input
-						id="input-monocito"
+						id="monocito"
 						readOnly
 					/>
 				</div>
@@ -41,7 +41,7 @@
 					<img style="width: 35px" src="./public/img/eosinofilo.jpg" alt="" />
 					<p style="width: 100px;">Eosino:</p>
 					<input
-						id="input-eosinofilo"
+						id="eosinofilo"
 						readOnly
 					/>
 				</div>
@@ -50,7 +50,7 @@
 					<img style="width: 35px" src="./public/img/basofilo.jpg" alt="" />
 					<p style="width: 100px;">Basofilo:</p>
 					<input
-						id="input-basofilo"
+						id="basofilo"
 						readOnly
 					/>
 				</div>
@@ -59,7 +59,7 @@
 					<img style="width: 35px" src="./public/img/linfocito-reactivo.jpg" alt="" />
 					<p style="width: 100px;">Linfo React:</p>
 					<input
-						id="input-linfocito-reactivo"
+						id="linfocito-reactivo"
 						readOnly
 					/>
 				</div>
@@ -68,7 +68,7 @@
 					<img style="width: 35px" src="./public/img/bandas.jpg" alt="" />
 					<p style="width: 100px;">Bandas:</p>
 					<input
-						id="input-bandas"
+						id="bandas"
 						readOnly
 					/>
 				</div>
@@ -77,7 +77,7 @@
 					<img style="width: 35px" src="./public/img/metamielocito.jpg" alt="" />
 					<p style="width: 100px;">Metamiel:</p>
 					<input
-						id="input-metamielocito"
+						id="metamielocito"
 						readOnly
 					/>
 				</div>
@@ -86,7 +86,17 @@
 					<img style="width: 35px" src="./public/img/mielocito.jpg" alt="" />
 					<p style="width: 100px;">Mielocito:</p>
 					<input
-						id="input-mielocito"
+						id="mielocito"
+						readOnly
+					/>
+				</div>
+				
+				
+				<div class="container-basic" >
+					<img style="width: 35px" src="./public/img/promielocito.jpg" alt="" />
+					<p style="width: 100px;">Promielocito:</p>
+					<input
+						id="promielocito"
 						readOnly
 					/>
 				</div>
@@ -95,20 +105,10 @@
 					<img style="width: 35px" src="./public/img/blastos.jpg" alt="" />
 					<p style="width: 100px;">Blastos:</p>
 					<input
-						id="input-blastos"
-						readOnly
-					/>
+							id="blastos"
+							readOnly
+							/>
 				</div>
-				
-				<div class="container-basic" >
-					<img style="width: 35px" src="./public/img/otros.jpg" alt="" />
-					<p style="width: 100px;">Otros:</p>
-					<input
-						id="input-otros"
-						readOnly
-					/>
-				</div>
-				
 
 				<div class="container-basic" >
 					<p style="width: 155px;">Limite:</p>
@@ -127,8 +127,8 @@
 			
 				<div class="container-botton">
 					<button>Acerca de</button>
-					<button onclick="init()">Limpiar</button>
 					<button onclick="setLimite()" >Limite</button>
+					<button onclick="init()">Limpiar</button>
 				</div>
 			</div>
 
