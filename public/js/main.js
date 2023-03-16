@@ -46,6 +46,7 @@ const run = (cell, cellSound) => {
 	cell.value = ~~cell.value + 1;
 	cellSound.cloneNode(true).play();
 	total.value = ~~total.value + 1;
+	cell.focus();
 };
 
 const onKeypress = ({ key }) => {
@@ -92,7 +93,7 @@ const onKeypress = ({ key }) => {
 	}
 };
 
-async function main() {
+const init = () => {
 	neutrofilo.value = 0;
 	linfocito.value = 0;
 	monocito.value = 0;
@@ -108,6 +109,14 @@ async function main() {
 	paciente.value = "";
 	total.value = 0;
 	limite.value = 100;
+};
+
+const setLimite = () => {
+	limite.value = prompt("Cual es su limite?");
+};
+
+async function main() {
+	init();
 	document.addEventListener("keydown", onKeypress);
 }
 

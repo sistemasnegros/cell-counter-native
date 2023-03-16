@@ -4,13 +4,14 @@
 		<meta charset="UTF-8" />
 		<link rel="icon" type="image/svg+xml" href="./public/icon/icono.ico" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./public/css/style.css">
 		<title>Cell Counter</title>
 	</head>
 	<body>
 		<div id="root">
 
-				<div style="display: flex; align-items: center; gap: 20px" >
-					<img style="width: 50px" src="./public/img/neutrofilo.jpg" alt="" />
+				<div class="container-basic" >
+					<img style="width: 35px" src="./public/img/neutrofilo.jpg" alt="" />
 					<p style="width: 100px;">Neutro:</p>
 					<input
 						id="input-neutrofilo"
@@ -18,8 +19,8 @@
 					/>
 				</div>
 				
-				<div style="display: flex; align-items: center; gap: 20px" >
-					<img style="width: 50px" src="./public/img/linfocito-reactivo.jpg" alt="" />
+				<div class="container-basic" >
+					<img style="width: 35px" src="./public/img/linfocito-reactivo.jpg" alt="" />
 					<p style="width: 100px;">Linfo:</p>
 					<input
 						id="input-linfocito"
@@ -27,8 +28,8 @@
 					/>
 				</div>
 				
-				<div style="display: flex; align-items: center; gap: 20px" >
-					<img style="width: 50px" src="./public/img/monocito.jpg" alt="" />
+				<div class="container-basic" >
+					<img style="width: 35px" src="./public/img/monocito.jpg" alt="" />
 					<p style="width: 100px;">Monocito:</p>
 					<input
 						id="input-monocito"
@@ -36,8 +37,8 @@
 					/>
 				</div>
 			
-				<div style="display: flex; align-items: center; gap: 20px" >
-					<img style="width: 50px" src="./public/img/eosinofilo.jpg" alt="" />
+				<div class="container-basic" >
+					<img style="width: 35px" src="./public/img/eosinofilo.jpg" alt="" />
 					<p style="width: 100px;">Eosino:</p>
 					<input
 						id="input-eosinofilo"
@@ -45,8 +46,8 @@
 					/>
 				</div>
 				
-				<div style="display: flex; align-items: center; gap: 20px" >
-					<img style="width: 50px" src="./public/img/basofilo.jpg" alt="" />
+				<div class="container-basic" >
+					<img style="width: 35px" src="./public/img/basofilo.jpg" alt="" />
 					<p style="width: 100px;">Basofilo:</p>
 					<input
 						id="input-basofilo"
@@ -54,8 +55,8 @@
 					/>
 				</div>
 			
-				<div style="display: flex; align-items: center; gap: 20px" >
-					<img style="width: 50px" src="./public/img/linfocito-reactivo.jpg" alt="" />
+				<div class="container-basic" >
+					<img style="width: 35px" src="./public/img/linfocito-reactivo.jpg" alt="" />
 					<p style="width: 100px;">Linfo React:</p>
 					<input
 						id="input-linfocito-reactivo"
@@ -63,8 +64,8 @@
 					/>
 				</div>
 			
-				<div style="display: flex; align-items: center; gap: 20px" >
-					<img style="width: 50px" src="./public/img/bandas.jpg" alt="" />
+				<div class="container-basic" >
+					<img style="width: 35px" src="./public/img/bandas.jpg" alt="" />
 					<p style="width: 100px;">Bandas:</p>
 					<input
 						id="input-bandas"
@@ -72,8 +73,8 @@
 					/>
 				</div>
 				
-				<div style="display: flex; align-items: center; gap: 20px" >
-					<img style="width: 50px" src="./public/img/metamielocito.jpg" alt="" />
+				<div class="container-basic" >
+					<img style="width: 35px" src="./public/img/metamielocito.jpg" alt="" />
 					<p style="width: 100px;">Metamiel:</p>
 					<input
 						id="input-metamielocito"
@@ -81,8 +82,8 @@
 					/>
 				</div>
 				
-				<div style="display: flex; align-items: center; gap: 20px" >
-					<img style="width: 50px" src="./public/img/mielocito.jpg" alt="" />
+				<div class="container-basic" >
+					<img style="width: 35px" src="./public/img/mielocito.jpg" alt="" />
 					<p style="width: 100px;">Mielocito:</p>
 					<input
 						id="input-mielocito"
@@ -90,8 +91,8 @@
 					/>
 				</div>
 				
-				<div style="display: flex; align-items: center; gap: 20px" >
-					<img style="width: 50px" src="./public/img/blastos.jpg" alt="" />
+				<div class="container-basic" >
+					<img style="width: 35px" src="./public/img/blastos.jpg" alt="" />
 					<p style="width: 100px;">Blastos:</p>
 					<input
 						id="input-blastos"
@@ -99,8 +100,8 @@
 					/>
 				</div>
 				
-				<div style="display: flex; align-items: center; gap: 20px" >
-					<img style="width: 50px" src="./public/img/otros.jpg" alt="" />
+				<div class="container-basic" >
+					<img style="width: 35px" src="./public/img/otros.jpg" alt="" />
 					<p style="width: 100px;">Otros:</p>
 					<input
 						id="input-otros"
@@ -108,22 +109,26 @@
 					/>
 				</div>
 				
-				<div style="display: flex; align-items: center; gap: 20px">
-					<p>Paciente</p>
-					<input type="text" id="input-paciente" value="" />
+
+				<div class="container-basic" >
+					<p style="width: 155px;">Limite:</p>
+					<input readonly id="input-limite" />
 				</div>
 
-				<div style="display: flex; align-items: center; gap: 20px" >
-					<p>Limite:</p>
-					<input readonly id="input-limite" />
-					<p>Total:</p>
+				<div class="container-basic">
+					<p style="width: 155px;">Total</p>
 					<input readonly id="input-total" />
 				</div>
-
-				<div>
+				
+				<div class="container-basic">
+					<p style="width: 155px;">Paciente</p>
+					<input type="text" id="input-paciente" value="" />
+				</div>
+			
+				<div class="container-botton">
 					<button>Acerca de</button>
-					<button>Limpiar</button>
-					<button>Limite</button>
+					<button onclick="init()">Limpiar</button>
+					<button onclick="setLimite()" >Limite</button>
 				</div>
 			</div>
 
