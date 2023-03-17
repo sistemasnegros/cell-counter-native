@@ -129,8 +129,7 @@ const init = () => {
 
 const setLimite = () => {
 	const value = prompt("Cual es su limite?");
-
-	if (isNaN(value)) {
+	if (!value || isNaN(value)) {
 		return setLimite();
 	}
 	limite.value = value;
@@ -138,6 +137,7 @@ const setLimite = () => {
 
 const setPaciente = () => {
 	paciente.value = prompt("Cual es su paciente?");
+	document.activeElement.blur();
 };
 
 const generateReport = () => {
@@ -179,11 +179,11 @@ const generateReport2 = () => {
 
 	const cellStored = cellFilted.map((cell) => ({
 		name: cell.id,
-		por: ~~cell.value / ~~limite.value,
+		por: (~~cell.value / ~~limite.value) * 100,
 	}));
 
 	const cellOutput = cellStored.reduce(
-		(a, e) => `${a} ${e.name}: %${e.por} \n`,
+		(a, e) => `${a} ${e.name}: ${e.por}% \n`,
 		""
 	);
 
