@@ -177,10 +177,14 @@ const generateReport2 = () => {
 
 	const cellFilted = cells.filter((e) => e.value !== "0");
 
-	const cellStored = cellFilted.map((cell) => ({
-		name: cell.id,
-		por: (~~cell.value / ~~limite.value) * 100,
-	}));
+	const cellStored = cellFilted.map((cell) => {
+		let por = (+cell.value / +limite.value) * 100;
+		por = Number.isInteger(por) ? por : por.toFixed(2);
+		return {
+			name: cell.id,
+			por,
+		};
+	});
 
 	const cellOutput = cellStored.reduce(
 		(a, e) => `${a} ${e.name}: ${e.por}% \n`,
